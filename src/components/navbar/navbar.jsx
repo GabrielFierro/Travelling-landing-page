@@ -1,10 +1,21 @@
-import { Box, Button, ButtonGroup, Flex, Link, Spacer } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  ButtonGroup,
+  Flex,
+  Image,
+  Link,
+  Spacer
+} from '@chakra-ui/react';
 import React from 'react';
+import logo from '../../assets/images/logo.svg';
 
-export default function navbar() {
+export default function Navbar() {
   return (
-    <Flex>
-      <Box p='4'>Logo</Box>
+    <Flex bg='blue.300'>
+      <Box pt='6' pl='4'>
+        <Image src={logo} alt='Logo' />
+      </Box>
       <Spacer />
       <Flex>
         <Flex
