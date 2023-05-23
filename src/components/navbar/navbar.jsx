@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  Center,
-  Flex,
-  Spacer,
-  Text
-} from '@chakra-ui/react';
+import { Box, Button, ButtonGroup, Flex, Link, Spacer } from '@chakra-ui/react';
 import React from 'react';
 
 export default function navbar() {
@@ -21,10 +13,10 @@ export default function navbar() {
           justify='space-between'
           align='center'
         >
-          <Text>Home</Text>
-          <Text>Destination</Text>
-          <Text>About</Text>
-          <Text>Blog</Text>
+          <Link>Home</Link>
+          <Link>Destination</Link>
+          <Link>About</Link>
+          <Link>Blog</Link>
         </Flex>
       </Flex>
       <Spacer />
