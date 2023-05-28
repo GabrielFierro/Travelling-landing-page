@@ -21,7 +21,7 @@ export default function Navbar() {
         <Flex
           w='400px'
           color='brand.black'
-          justify='space-between'
+          justify='space-around'
           align='center'
         >
           <Link href='#'>Home</Link>
