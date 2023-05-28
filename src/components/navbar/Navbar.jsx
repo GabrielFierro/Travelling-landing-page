@@ -20,9 +20,9 @@ export default function Navbar() {
       <Flex>
         <Flex
           w='400px'
-          color='brand.black'
           justify='space-around'
           align='center'
+          color='brand.white'
           textStyle='navbar'
         >
           <Link href='#'>Home</Link>
