@@ -33,7 +33,15 @@ export default function Navbar() {
       </Flex>
       <Spacer />
       <ButtonGroup p='4' gap='2'>
-        <Button color='brand.white' variant='link'>
+        <Button
+          color='brand.white'
+          variant='link'
+          px='4'
+          _hover={{
+            background: 'brand.white',
+            color: 'brand.black'
+          }}
+        >
           Login
         </Button>
         <Button
