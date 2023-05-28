@@ -12,7 +12,7 @@ import logo from '../../assets/images/logo.svg';
 
 export default function Navbar() {
   return (
-    <Flex bg='blue.300'>
+    <Flex bg='bg.transparent' pos='fixed' zIndex={2} w='100%'>
       <Box pt='6' pl='4'>
         <Image src={logo} alt='Logo' />
       </Box>
