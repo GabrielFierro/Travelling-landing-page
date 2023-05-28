@@ -33,10 +33,16 @@ export default function Navbar() {
       </Flex>
       <Spacer />
       <ButtonGroup p='4' gap='2'>
-        <Button color='brand.accent' variant='link'>
+        <Button color='brand.white' variant='link'>
           Login
         </Button>
-        <Button color='brand.black' colorScheme='white' variant='outline'>
+        <Button
+          color='brand.black'
+          colorScheme='gray'
+          borderRadius='2xl'
+          variant='solid'
+          px='6'
+        >
           Register
         </Button>
       </ButtonGroup>
