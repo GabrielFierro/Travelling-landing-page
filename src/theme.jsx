@@ -20,6 +20,26 @@ const theme = extendTheme({
     medium: 500, // Rubik navbar, Montserrat subtitles
     semibold: 600, // Montserrat paragraph, about us
     bold: 700 // Montserrat titles, Rubik buttons, Rubik footer sections
+  },
+  textStyles: {
+    h1: {
+      fontSize: ['40px', '52px'],
+      fontWeight: 'bold',
+      lineHeight: '110%',
+      letterSpacing: '-2%'
+    },
+    h2: {
+      fontSize: ['28px', '40px'],
+      fontWeight: 'semibold',
+      lineHeight: '110%',
+      letterSpacing: '-1%'
+    },
+    navbar: {
+      fontSize: ['12px', '16px'],
+      fontWeight: 'regular',
+      lineHeight: '110%',
+      letterSpacing: '-2%'
+    }
   }
 });
 
