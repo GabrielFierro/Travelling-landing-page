@@ -23,6 +23,7 @@ export default function Navbar() {
           color='brand.black'
           justify='space-around'
           align='center'
+          textStyle='navbar'
         >
           <Link href='#'>Home</Link>
           <Link href='#'>Destination</Link>
