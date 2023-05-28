@@ -24,10 +24,10 @@ export default function Navbar() {
           justify='space-between'
           align='center'
         >
-          <Link>Home</Link>
-          <Link>Destination</Link>
-          <Link>About</Link>
-          <Link>Blog</Link>
+          <Link href='#'>Home</Link>
+          <Link href='#'>Destination</Link>
+          <Link href='#'>About</Link>
+          <Link href='#'>Blog</Link>
         </Flex>
       </Flex>
       <Spacer />
