@@ -14,11 +14,21 @@ export default function Destination() {
       </Flex>
       <Box>
         <Flex h='100px' mt='12' direction='row' justify='space-evenly'>
-          <Button bg='gray.200'>All</Button>
-          <Button bg='gray.200'>Recommend</Button>
-          <Button bg='gray.200'>Beach</Button>
-          <Button bg='gray.200'>Nature</Button>
-          <Button bg='gray.200'>Mountain</Button>
+          <Button boxShadow='md' bg='gray.50'>
+            All
+          </Button>
+          <Button boxShadow='md' bg='gray.50'>
+            Recommend
+          </Button>
+          <Button boxShadow='md' bg='gray.50'>
+            Beach
+          </Button>
+          <Button boxShadow='md' bg='gray.50'>
+            Nature
+          </Button>
+          <Button boxShadow='md' bg='gray.50'>
+            Mountain
+          </Button>
         </Flex>
       </Box>
     </Box>
