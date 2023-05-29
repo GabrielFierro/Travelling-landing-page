@@ -34,6 +34,13 @@ const theme = extendTheme({
       lineHeight: '110%',
       letterSpacing: '-1%'
     },
+    h3: {
+      fontFamily: 'Montserrat',
+      fontSize: ['16px', '20px'],
+      fontWeight: 'medium',
+      lineHeight: '110%',
+      letterSpacing: '-1%'
+    },
     navbar: {
       fontSize: ['12px', '16px'],
       fontWeight: 'regular',
