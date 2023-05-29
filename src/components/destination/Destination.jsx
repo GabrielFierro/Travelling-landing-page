@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
 
 export default function Destination() {
   return (
@@ -12,6 +12,15 @@ export default function Destination() {
           Find Your Dream Destination
         </Heading>
       </Flex>
+      <Box>
+        <Flex h='100px' mt='12' direction='row' justify='space-evenly'>
+          <Button bg='gray.200'>All</Button>
+          <Button bg='gray.200'>Recommend</Button>
+          <Button bg='gray.200'>Beach</Button>
+          <Button bg='gray.200'>Nature</Button>
+          <Button bg='gray.200'>Mountain</Button>
+        </Flex>
+      </Box>
     </Box>
   );
 }
