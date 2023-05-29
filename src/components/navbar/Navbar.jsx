@@ -39,7 +39,9 @@ export default function Navbar() {
           px='4'
           _hover={{
             background: 'brand.white',
-            color: 'brand.black'
+            color: 'brand.black',
+            borderRadius: '2xl',
+            variant: 'solid'
           }}
         >
           Login
