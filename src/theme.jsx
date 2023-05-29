@@ -25,8 +25,8 @@ const theme = extendTheme({
     h1: {
       fontSize: ['40px', '52px'],
       fontWeight: 'bold',
-      lineHeight: '110%',
-      letterSpacing: '-2%'
+      lineHeight: '130%',
+      letterSpacing: '5%'
     },
     h2: {
       fontSize: ['28px', '40px'],
