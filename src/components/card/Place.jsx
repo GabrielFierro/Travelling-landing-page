@@ -19,7 +19,7 @@ export default function Place({ src, alt, description }) {
         <Stack mt='4' spacing='3'>
           <Flex direction='row' justify='space-between'>
             <Flex>
-              <Image src={LocationIcon} />
+              <Image src={LocationIcon} alt={alt} />
               <Heading size='base'>{alt}</Heading>
             </Flex>
             <Text color='brand.accent' fontSize='md'>
