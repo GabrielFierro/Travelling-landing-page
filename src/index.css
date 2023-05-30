@@ -40,8 +40,8 @@ video {
 }
 
 .overlay_2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url('./assets/images/machu_pichubg.webp');
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url('./assets/images/person_walking.webp');
   position: relative;
   left: 0;
   bottom: 0;
