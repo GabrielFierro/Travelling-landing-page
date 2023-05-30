@@ -13,7 +13,7 @@ const theme = extendTheme({
   },
   fonts: {
     heading: `'Montserrat', sans-serif`,
-    body: `'Rubik', sans-serif`
+    text: `'Rubik', sans-serif`
   },
   fontWeights: {
     regular: 400, // categories, Rubik footer sections categories
@@ -29,13 +29,12 @@ const theme = extendTheme({
       letterSpacing: '5%'
     },
     h2: {
-      fontSize: ['28px', '40px'],
+      fontSize: ['16px', '20px', '24px', '28px', '36px'],
       fontWeight: 'semibold',
       lineHeight: '110%',
       letterSpacing: '-1%'
     },
     h3: {
-      fontFamily: 'Montserrat',
       fontSize: ['16px', '20px'],
       fontWeight: 'medium',
       lineHeight: '110%',
