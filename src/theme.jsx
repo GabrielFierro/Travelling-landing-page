@@ -45,6 +45,12 @@ const theme = extendTheme({
       fontWeight: 'regular',
       lineHeight: '110%',
       letterSpacing: '-2%'
+    },
+    footer: {
+      fontSize: ['12px', '16px'],
+      fontWeight: 'bold',
+      lineHeight: '110%',
+      letterSpacing: '-2%'
     }
   }
 });
