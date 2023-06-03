@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 // import the data about the images
 import { data } from './data';
-import Card from './Card';
+import CardData from './CardData';
 import ButtonHandle from './ButtonHandle';
 // Import components
 
@@ -21,7 +21,7 @@ export default function Category() {
   return (
     <Box maxW='100%' h='500px'>
       <Flex direction='column'>
-        <Flex h='300px' direction='column' align='center' justify='center'>
+        <Flex h='250px' direction='column' align='center' justify='center'>
           <Text textStyle='h3' color='brand.accent' my={3}>
             EXPLORE YOUR DREAM PLACE
           </Text>
@@ -30,7 +30,7 @@ export default function Category() {
             <ButtonHandle categories={cats} handleClick={filter} />
           </Flex>
         </Flex>
-        <Card allCards={card} />
+        <CardData allCards={card} />
       </Flex>
     </Box>
   );
