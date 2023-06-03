@@ -12,6 +12,7 @@ export default function Category() {
 
   const filter = (cat) => {
     if (cat === 'All') {
+      console.log('entro al if');
       setCard(data);
       return;
     }
