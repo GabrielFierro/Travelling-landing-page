@@ -21,9 +21,10 @@ export default function ButtonHandle({ categories, handleClick }) {
             backgroundColor: activeButton === index ? btnColor : '#E2E8F0',
             color: activeButton === index ? textColor : 'black'
           }}
-          onClick={
-            (() => handleClick(category), () => handleClickButton(index))
-          }
+          onClick={() => {
+            handleClick(category);
+            handleClickButton(index);
+          }}
         >
           {category}
         </Button>
