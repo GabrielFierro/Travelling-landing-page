@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import StarIcon from '../../assets/images/star-icon.svg';
+import LocationIcon from '../../assets/images/location-icon.svg';
 
 export default function CardData({ allCards }) {
   const cards = allCards.map((card) => {
@@ -40,7 +41,12 @@ export default function CardData({ allCards }) {
             alt={card.title}
             borderRadius='2xl'
           />
-          <Heading size='md'>{card.title}</Heading>
+          <Flex maxW='300px' px='4' pos='absolute' bottom='30px' left='30px'>
+            <Image src={LocationIcon} alt='Location icon' />
+            <Heading size='md' color='brand.white' px='1'>
+              {card.title}
+            </Heading>
+          </Flex>
         </CardBody>
       </Card>
     );
