@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <Flex bg='bg.transparent' pos='absolute' zIndex={2} w='100%'>
       <Box pt='6' pl='4'>
-        <Image src={logo} alt='Logo' />
+        <Image src={logo} alt='Logo' cursor='pointer' />
       </Box>
       <Spacer />
       <Flex>
