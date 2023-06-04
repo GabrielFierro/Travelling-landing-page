@@ -39,7 +39,15 @@ export default function Category() {
         align='center'
         justify='center'
       >
-        <Button bg='brand.accent' size='lg' variant='solid'>
+        <Button
+          bg='brand.accent'
+          size='lg'
+          variant='solid'
+          rounded='2xl'
+          _hover={{
+            background: 'brand.accent'
+          }}
+        >
           <Text textStyle='button' color='brand.white'>
             EXPLORE MORE
           </Text>
