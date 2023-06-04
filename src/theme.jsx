@@ -51,6 +51,12 @@ const theme = extendTheme({
       fontWeight: 'bold',
       lineHeight: '110%',
       letterSpacing: '-2%'
+    },
+    button: {
+      fontSize: ['24px'],
+      fontWeight: 'bold',
+      lineHeight: '110%',
+      letterSpacing: '-2%'
     }
   }
 });
