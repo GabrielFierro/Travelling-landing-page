@@ -15,7 +15,7 @@ import LocationIcon from '../../assets/images/location-icon.svg';
 export default function CardData({ allCards }) {
   const cards = allCards.map((card) => {
     return (
-      <Card key={card.id} maxW='lg' variant='filled' bg='brand.white'>
+      <Card key={card.id} maxW='lg' variant='filled' bg='brand.white '>
         <CardBody>
           <Flex
             bg='blackAlpha.500'
