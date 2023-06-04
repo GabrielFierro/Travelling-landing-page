@@ -70,3 +70,8 @@ video {
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.5);
 }
+
+.card_overlay:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+}
