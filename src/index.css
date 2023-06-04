@@ -17,6 +17,10 @@ video {
   object-fit: cover;
 }
 
+span {
+  color: #19a7ce;
+}
+
 .image {
   display: block;
   object-fit: cover;
@@ -74,4 +78,9 @@ video {
 .card_overlay:hover {
   cursor: pointer;
   background: rgba(0, 0, 0, 0.2);
+}
+
+.card_boxShadow {
+  box-shadow: 5px 10px #19a7ce;
+  border: 5px solid #000;
 }
