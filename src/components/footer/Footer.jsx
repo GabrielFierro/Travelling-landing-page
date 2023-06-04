@@ -1,9 +1,11 @@
 import React from 'react';
 import { Box, Flex, SimpleGrid, Text } from '@chakra-ui/react';
+import Message from './Message';
 
 export default function Footer() {
   return (
-    <Box maxW='100%' h='200px' mt='16'>
+    <Box maxW='100%' h='100vh' mt='12'>
+      <Message />
       <Box maxW='100%' m='9'>
         <SimpleGrid columns={4} spacing={10}>
           <Box height='auto'>
