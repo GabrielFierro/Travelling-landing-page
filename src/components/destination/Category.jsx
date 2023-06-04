@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
 // import the data about the images
 import { data } from './data';
 import CardData from './CardData';
@@ -31,6 +31,19 @@ export default function Category() {
           </Flex>
         </Flex>
         <CardData allCards={card} />
+      </Flex>
+      <Flex
+        maxW='100%'
+        h='150px'
+        direction='row'
+        align='center'
+        justify='center'
+      >
+        <Button bg='brand.accent' size='lg' variant='solid'>
+          <Text textStyle='button' color='brand.white'>
+            EXPLORE MORE
+          </Text>
+        </Button>
       </Flex>
     </Box>
   );
