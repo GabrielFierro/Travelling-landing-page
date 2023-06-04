@@ -11,7 +11,7 @@ export default function Header() {
         <source src={video} type='video/mp4' />
       </video>
       <Box pos='absolute' top='100' left='100' w='500px'>
-        <Text color='brand.white' textStyle='h1'>
+        <Text color='brand.white' textStyle={{ sm: 'h2', md: 'h1' }}>
           TRAVEL AROUND THE WORLD
         </Text>
       </Box>
