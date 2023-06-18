@@ -32,9 +32,8 @@ export default function CardData({ allCards }) {
               4.8
             </Text>
           </Flex>
-          <Box className='card_overlay' width='370px'></Box>
           <Image
-            maxW='370px'
+            w='370px'
             h='350px'
             objectFit='cover'
             src={card.img}
