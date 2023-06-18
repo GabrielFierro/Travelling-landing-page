@@ -41,7 +41,7 @@ const theme = extendTheme({
       letterSpacing: '-1%'
     },
     navbar: {
-      fontSize: ['12px', '16px'],
+      fontSize: ['16px'],
       fontWeight: 'regular',
       lineHeight: '110%',
       letterSpacing: '-2%'
