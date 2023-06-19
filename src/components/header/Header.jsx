@@ -10,8 +10,8 @@ export default function Header() {
       <video autoPlay muted loop id='video'>
         <source src={video} type='video/mp4' />
       </video>
-      <Box pos='absolute' top='100' left='100' w='500px'>
-        <Text color='brand.white' textStyle={{ sm: 'h2', md: 'h1' }}>
+      <Box pos='absolute' top='100' left='100' maxW='500px'>
+        <Text color='brand.white' textStyle='h1'>
           TRAVEL AROUND THE WORLD
         </Text>
       </Box>
