@@ -50,5 +50,7 @@ export default function CardData({ allCards }) {
       </Card>
     );
   });
-  return <SimpleGrid columns={3}>{cards}</SimpleGrid>;
+  return (
+    <SimpleGrid columns={{ base: '1', sm: '2', md: '3' }}>{cards}</SimpleGrid>
+  );
 }
