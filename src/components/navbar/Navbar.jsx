@@ -14,25 +14,33 @@ export default function Navbar() {
     <Flex bg='transparent' pos='absolute' zIndex={2} w='100%'>
       <div className={`links ${clicked ? 'active' : ''}`}>
         <Flex
-          direction={['column', 'row']}
+          direction={{ base: 'column', md: 'row' }}
           justify={['space-between', 'center']}
           w='100%'
-          h={['80px', '100%']}
+          h='100%'
         >
-          <Box maxW='200px' pt='6' pl='4' h='100%'>
+          <Box
+            maxW='200px'
+            pt='6'
+            pl='4'
+            h={{ base: '100px', md: '100%' }}
+            pos={{ base: 'absolute', md: 'relative' }}
+            top={{ base: '10%', md: '0' }}
+            left={{ base: '30%', md: '0' }}
+          >
             <Image w='200px' src={logo} alt='Logo' cursor='pointer' />
           </Box>
           <Flex
             w='100%'
+            h='100%'
             justify='center'
-            align={['center', 'flex-start']}
-            className='a'
+            align={{ base: 'center', md: 'flex-start' }}
           >
             <Flex
-              h={['550px', '80px']}
+              h={{ base: '250px', md: '80px' }}
               w='400px'
-              direction={['column', 'column', 'row']}
-              justify={['space-evenly', 'space-between', 'space-around']}
+              direction={{ base: 'column', md: 'row' }}
+              justify={{ base: 'space-evenly', md: 'space-between' }}
               align='center'
               color='brand.white'
               textStyle='navbar'
@@ -45,8 +53,9 @@ export default function Navbar() {
           </Flex>
           <ButtonGroup p='4' gap='2'>
             <Button
-              w='100%'
-              h='50px'
+              w={{ base: '200px', md: '100px' }}
+              h='45px'
+              background='RGBA(0, 0, 0, 0.16)'
               color='brand.white'
               variant='link'
               px='4'
@@ -60,8 +69,8 @@ export default function Navbar() {
               Login
             </Button>
             <Button
-              w='100%'
-              h='50px'
+              w={{ base: '200px', md: '100px' }}
+              h='45px'
               color='brand.black'
               colorScheme='gray'
               borderRadius='2xl'
