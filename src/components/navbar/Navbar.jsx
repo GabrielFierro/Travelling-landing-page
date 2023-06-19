@@ -25,10 +25,10 @@ export default function Navbar() {
             pl='4'
             h={{ base: '100px', md: '100%' }}
             pos={{ base: 'absolute', md: 'relative' }}
-            top={{ base: '10%', md: '0' }}
-            left={{ base: '30%', md: '0' }}
+            top='10%'
+            left={{ base: '30%', md: '0px' }}
           >
-            <Image w='200px' src={logo} alt='Logo' cursor='pointer' />
+            <Image maxW='200px' src={logo} alt='Logo' cursor='pointer' />
           </Box>
           <Flex
             w='100%'
