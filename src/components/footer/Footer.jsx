@@ -4,9 +4,9 @@ import Message from './Message';
 
 export default function Footer() {
   return (
-    <Box maxW='100%' h='100vh' mt='12'>
+    <Box maxW='100%' h='570px' mt='12'>
       <Message />
-      <Box maxW='100%' m='9'>
+      <Box maxW='100%' m='9' h='150px'>
         <SimpleGrid columns={4} spacing={10}>
           <Box height='auto'>
             <svg
