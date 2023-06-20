@@ -55,13 +55,13 @@ export default function Navbar() {
             <Button
               w={{ base: '200px', md: '100px' }}
               h='45px'
-              background='RGBA(0, 0, 0, 0.16)'
+              background='RGBA(0, 0, 0, 0.1)'
               color='brand.white'
               variant='link'
               px='4'
               _hover={{
-                background: 'brand.white',
-                color: 'brand.black',
+                background: 'brand.accent',
+                color: 'brand.white',
                 borderRadius: '2xl',
                 variant: 'solid'
               }}
