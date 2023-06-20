@@ -19,14 +19,21 @@ export default function Category() {
   };
 
   return (
-    <Box maxW='100%' h='1200px'>
+    <Box maxW='100%' h='1350px'>
       <Flex direction='column'>
-        <Flex h='250px' direction='column' align='center' justify='center'>
+        <Flex h='400px' direction='column' align='center' justify='center'>
           <Text textStyle='h3' color='brand.accent' my={3}>
             EXPLORE YOUR DREAM PLACE
           </Text>
-          <Heading color='brand.black'>Find Your Dream Destination</Heading>
-          <Flex maxW='800px' h='100px' direction='row'>
+          <Heading color='brand.black' mb={6}>
+            Find Your Dream Destination
+          </Heading>
+          <Flex
+            maxW={{ base: '300px', sm: '600px' }}
+            h={{ base: '100%', xs: '100px' }}
+            align='center'
+            justify='center'
+          >
             <ButtonHandle categories={cats} handleClick={filter} />
           </Flex>
         </Flex>
