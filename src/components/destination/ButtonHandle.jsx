@@ -33,7 +33,13 @@ export default function ButtonHandle({ categories, handleClick }) {
   });
 
   return (
-    <Flex w='600px' align='center' justify='space-evenly'>
+    <Flex
+      w='600px'
+      h={{ base: '100%', md: '100px' }}
+      align='center'
+      justify='space-around'
+      direction={{ base: 'column', md: 'row' }}
+    >
       {buttons}
     </Flex>
   );
