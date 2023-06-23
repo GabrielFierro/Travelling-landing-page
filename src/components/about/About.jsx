@@ -14,7 +14,7 @@ export default function About() {
   return (
     <Box maxW='100%' h='auto'>
       <Flex align='center' justify='center'>
-        <Heading color='brand.black' as='h1' size='2xl' my='9'>
+        <Heading color='brand.black' as='h2' size='2xl' my='9'>
           ABOUT <span>US</span>
         </Heading>
       </Flex>
