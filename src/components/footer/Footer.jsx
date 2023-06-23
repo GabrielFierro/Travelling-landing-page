@@ -4,11 +4,11 @@ import Message from './Message';
 
 export default function Footer() {
   return (
-    <Box maxW='100%' h='570px' mt='12'>
+    <Box maxW='100%' h='auto' mt='12'>
       <Message />
-      <Box maxW='100%' m='9' h='150px'>
-        <SimpleGrid columns={4} spacing={10}>
-          <Box height='auto'>
+      <Box maxW='100%' h='170px' p={4}>
+        <SimpleGrid columns={{ base: 1, md: 4 }} spacing={10}>
+          <Box height='auto' w='auto'>
             <svg
               cursor='pointer'
               width='124'
@@ -31,7 +31,7 @@ export default function Footer() {
               />
             </svg>
           </Box>
-          <Box height='100%'>
+          <Box height='auto'>
             <Flex direction='column' h='100px' justify='space-between'>
               <Text textStyle='footer' cursor='pointer'>
                 About
