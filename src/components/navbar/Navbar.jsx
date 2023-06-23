@@ -77,12 +77,6 @@ export default function Navbar() {
               borderRadius='md'
               variant='solid'
               px='6'
-              _hover={{
-                background: 'brand.accent',
-                color: 'brand.white',
-                borderRadius: '2xl',
-                variant: 'solid'
-              }}
             >
               Register
             </Button>
