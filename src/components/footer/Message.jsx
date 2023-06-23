@@ -3,7 +3,14 @@ import { Box, Button, Flex, Text } from '@chakra-ui/react';
 
 export default function Message() {
   return (
-    <Box maxW='100%' align='center' h='250px' mb='24'>
+    <Box
+      maxW='100%'
+      align='center'
+      h='auto'
+      mb='24'
+      py={8}
+      px={{ base: '4', md: '12' }}
+    >
       <Flex
         direction='column'
         align='center'
@@ -11,7 +18,7 @@ export default function Message() {
         maxW='800px'
         h='100%'
         borderRadius='xl'
-        p='6'
+        p='12'
       >
         <Text textStyle='h2' color='brand.white'>
           Let&apos;s Don&apos;t Miss The 50% Discount & Explore The Beautiful Of
