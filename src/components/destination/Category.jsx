@@ -19,7 +19,7 @@ export default function Category() {
   };
 
   return (
-    <Box maxW='100%' h='1350px'>
+    <Box maxW='100%' h='auto'>
       <Flex direction='column'>
         <Flex h='400px' direction='column' align='center' justify='center'>
           <Text textStyle='h3' color='brand.accent' my={3}>
