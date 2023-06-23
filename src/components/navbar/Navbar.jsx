@@ -57,11 +57,12 @@ export default function Navbar() {
               h='45px'
               background='RGBA(0, 0, 0, 0.1)'
               color='brand.white'
-              variant='link'
+              borderRadius='md'
+              variant='solid'
               px='4'
               _hover={{
-                background: 'brand.accent',
-                color: 'brand.white',
+                background: 'brand.white',
+                color: 'brand.black',
                 borderRadius: '2xl',
                 variant: 'solid'
               }}
@@ -73,7 +74,7 @@ export default function Navbar() {
               h='45px'
               color='brand.black'
               colorScheme='gray'
-              borderRadius='2xl'
+              borderRadius='md'
               variant='solid'
               px='6'
               _hover={{
