@@ -18,52 +18,65 @@ export default function About() {
           ABOUT <span>US</span>
         </Heading>
       </Flex>
-      <Box width='100%' h={{ base: '300px', xs: '430px' }} py='8'>
-        <Flex px='16' mt='8'>
-          <Card maxH={{ base: '100%', sm: '100px' }} maxW='md'>
-            <Image rounded='md' src={Mountains} alt='Mountains'></Image>
+      <Box width='100%' h={{ base: '300px', xs: '430px' }}>
+        <Flex px={{ base: 6, xl: 1 }} direction={{ base: 'column', md: 'row' }}>
+          <Card
+            h='auto'
+            w='auto'
+            mb={{ base: 0, md: 6 }}
+            mx={{ base: 0, md: 5 }}
+          >
+            <Image
+              h='427px'
+              w='100%'
+              rounded='md'
+              src={Mountains}
+              alt='Mountains'
+            ></Image>
           </Card>
-          <Spacer />
-          <Box maxW='xl' px='4'>
-            <Text textStyle='h2' color='brand.black' align='center'>
+          <Flex direction='column' h='427px' w='550px' justify='center' px={0}>
+            <Text
+              textStyle='h2'
+              fontSize={{ base: '24px', md: '34px' }}
+              color='brand.black'
+              justify='space-between'
+              align='center'
+              w='100%'
+              px={8}
+            >
               We provide all necessary details for tourists who are interested
               in visiting beautiful destinations.
             </Text>
-            <Flex justify='space-around' mt='12'>
-              <Box>
-                <Text textStyle='h3' color='brand.accent'>
-                  12K
-                </Text>
-              </Box>
-              <Box>
-                <Text textStyle='h3' color='brand.accent'>
-                  16+
-                </Text>
-              </Box>
-              <Box>
-                <Text textStyle='h3' color='brand.accent'>
-                  10+
-                </Text>
-              </Box>
+            <Flex
+              justify='space-around'
+              align='center'
+              mt='12'
+              w='auto'
+              h='auto'
+              px={4}
+            >
+              <Text textStyle='h3' color='brand.accent'>
+                12K
+              </Text>
+              <Text textStyle='h3' color='brand.accent'>
+                16+
+              </Text>
+              <Text textStyle='h3' color='brand.accent'>
+                10+
+              </Text>
             </Flex>
-            <Flex justify='space-around' mt='3'>
-              <Box w='120px' h='50px' align='center'>
-                <Text textStyle='navbar' color='brand.black'>
-                  Success Journey
-                </Text>
-              </Box>
-              <Box w='120px' h='50px' align='center'>
-                <Text textStyle='navbar' color='brand.black'>
-                  Awards Winning
-                </Text>
-              </Box>
-              <Box w='120px' h='50px' align='center'>
-                <Text textStyle='navbar' color='brand.black'>
-                  Years of Experience
-                </Text>
-              </Box>
+            <Flex justify='space-around' mt='3' w='100%' h='auto'>
+              <Text textStyle='navbar' color='brand.black'>
+                Success Journey
+              </Text>
+              <Text textStyle='navbar' color='brand.black'>
+                Awards Winning
+              </Text>
+              <Text textStyle='navbar' color='brand.black'>
+                Years of Experience
+              </Text>
             </Flex>
-          </Box>
+          </Flex>
         </Flex>
       </Box>
     </Box>
