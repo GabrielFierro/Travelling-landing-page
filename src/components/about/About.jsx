@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Box,
-  Card,
-  Flex,
-  Heading,
-  Image,
-  Spacer,
-  Text
-} from '@chakra-ui/react';
+import { Box, Card, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import Mountains from '../../assets/images/mountains.webp';
 
 export default function About() {
