@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <Box maxW='100%' h='auto' mt='12'>
       <Message />
-      <Box maxW='100%' h='auto' p={4}>
+      <Box maxW='100%' h='auto' p={4} mb={16}>
         <SimpleGrid columns={{ base: 1, md: 4 }} spacing={10}>
           <Box>
             <svg
