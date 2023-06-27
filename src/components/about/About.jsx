@@ -28,7 +28,6 @@ export default function About() {
             ></Image>
           </Card>
           <Flex
-            bg='tomato'
             direction='column'
             h='427px'
             w={{ base: '100%', md: '550px' }}
