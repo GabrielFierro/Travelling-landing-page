@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <Flex bg='transparent' pos='absolute' zIndex={2} w='100%'>
+    <Flex bg='rgba(0,0,0,0.7)' pos='fixed' zIndex={2} w='100%'>
       <div className={`links ${clicked ? 'active' : ''}`}>
         <Flex
           direction={{ base: 'column', md: 'row' }}
