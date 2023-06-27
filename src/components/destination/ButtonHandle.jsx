@@ -14,7 +14,7 @@ export default function ButtonHandle({ categories, handleClick }) {
 
   const buttons = categories.map((category, index) => {
     return (
-      <div key={index}>
+      <div key={index} style={{ marginBottom: '15px' }}>
         <Button
           key={index}
           style={{
