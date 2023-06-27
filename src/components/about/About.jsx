@@ -22,6 +22,7 @@ export default function About() {
               h='427px'
               w='100%'
               rounded='md'
+              objectFit='cover'
               src={Mountains}
               alt='Mountains'
             ></Image>
