@@ -64,7 +64,7 @@ export default function About() {
                 10+
               </Text>
             </Flex>
-            <Flex justify='space-around' mt='3' w='100%' h='auto'>
+            <Flex justify='space-between' mt='3' w='100%' h='auto'>
               <Text textStyle='navbar' color='brand.black'>
                 Success Journey
               </Text>
