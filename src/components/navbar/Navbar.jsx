@@ -45,10 +45,10 @@ export default function Navbar() {
               color='brand.white'
               textStyle='navbar'
             >
-              <Link href='#'>Home</Link>
-              <Link href='#'>Destination</Link>
-              <Link href='#'>About</Link>
-              <Link href='#'>Blog</Link>
+              <Link>Home</Link>
+              <Link>Destination</Link>
+              <Link>About</Link>
+              <Link>Blog</Link>
             </Flex>
           </Flex>
           <Stack
