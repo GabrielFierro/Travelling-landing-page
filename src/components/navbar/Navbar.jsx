@@ -25,7 +25,7 @@ export default function Navbar() {
             pl='4'
             h={{ base: '80px', md: '100%' }}
             pos={{ base: 'absolute', md: 'relative' }}
-            top='10%'
+            top={{ base: '10%', md: '0px' }}
             left={{ base: '35%', md: '0px' }}
           >
             <Image maxW='200px' src={logo} alt='Logo' cursor='pointer' />
@@ -56,11 +56,12 @@ export default function Navbar() {
             gap='4'
             display='flex'
             direction='row'
-            align='center'
+            mt={4}
+            mx='4'
             justify='center'
           >
             <Button
-              w={{ base: '200px', md: '100px' }}
+              w='100px'
               h='45px'
               background='RGBA(0, 0, 0, 0.1)'
               color='brand.white'
@@ -75,7 +76,7 @@ export default function Navbar() {
               Login
             </Button>
             <Button
-              w={{ base: '200px', md: '100px' }}
+              w='100px'
               h='45px'
               color='brand.black'
               colorScheme='gray'
