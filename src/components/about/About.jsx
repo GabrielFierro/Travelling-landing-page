@@ -27,7 +27,14 @@ export default function About() {
               alt='Mountains'
             ></Image>
           </Card>
-          <Flex direction='column' h='427px' w='550px' justify='center' px={0}>
+          <Flex
+            bg='tomato'
+            direction='column'
+            h='427px'
+            w={{ base: '100%', md: '550px' }}
+            justify='center'
+            px={0}
+          >
             <Text
               textStyle='h2'
               fontSize={{ base: '24px', md: '34px' }}
