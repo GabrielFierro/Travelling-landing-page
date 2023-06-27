@@ -1,4 +1,12 @@
-import { Box, Button, ButtonGroup, Flex, Image, Link } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  ButtonGroup,
+  Flex,
+  Image,
+  Link,
+  Stack
+} from '@chakra-ui/react';
 import React, { useState } from 'react';
 import logo from '../../assets/images/logo.svg';
 import BurguerButton from './BurguerButton';
@@ -51,7 +59,14 @@ export default function Navbar() {
               <Link href='#'>Blog</Link>
             </Flex>
           </Flex>
-          <ButtonGroup p='4' gap='2'>
+          <Stack
+            pb='4'
+            gap='4'
+            display='flex'
+            direction='row'
+            align='center'
+            justify='center'
+          >
             <Button
               w={{ base: '200px', md: '100px' }}
               h='45px'
@@ -78,7 +93,7 @@ export default function Navbar() {
             >
               Register
             </Button>
-          </ButtonGroup>
+          </Stack>
         </Flex>
       </div>
       <BurguerButton clicked={clicked} handleClick={handleClick} />
