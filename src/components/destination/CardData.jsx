@@ -14,7 +14,7 @@ import LocationIcon from '../../assets/images/location-icon.svg';
 export default function CardData({ allCards }) {
   const cards = allCards.map((card) => {
     return (
-      <Card key={card.id} maxW='lg' variant='filled' bg='brand.white '>
+      <Card key={card.id} maxW='lg' variant='filled' bg='brand.white'>
         <CardBody>
           <Flex
             bg='blackAlpha.500'
@@ -25,8 +25,17 @@ export default function CardData({ allCards }) {
             top='35px'
             right='75px'
             zIndex={1}
+            _hover={{
+              cursor: 'pointer'
+            }}
           >
-            <Image src={StarIcon} alt='Logo' />
+            <Image
+              src={StarIcon}
+              alt='Logo'
+              _hover={{
+                cursor: 'pointer'
+              }}
+            />
             <Text color='white' fontSize='2xl' px='2'>
               4.8
             </Text>
@@ -38,6 +47,9 @@ export default function CardData({ allCards }) {
             src={card.img}
             alt={card.title}
             borderRadius='2xl'
+            _hover={{
+              cursor: 'pointer'
+            }}
           />
           <Flex maxW='300px' px='4' pos='absolute' bottom='30px' left='30px'>
             <Image src={LocationIcon} alt='Location icon' />
