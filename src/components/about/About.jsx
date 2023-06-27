@@ -13,14 +13,9 @@ export default function About() {
       </Flex>
       <Box width='100%' h={{ base: '300px', xs: '430px' }}>
         <Flex px={{ base: 6, xl: 1 }} direction={{ base: 'column', md: 'row' }}>
-          <Card
-            h='auto'
-            w='600px'
-            mb={{ base: 0, md: 6 }}
-            mx={{ base: 0, md: 5 }}
-          >
+          <Card h='427px' w='600px' m={{ base: 0, md: 6 }}>
             <Image
-              h='427px'
+              h='full'
               w='100%'
               rounded='md'
               objectFit='cover'
