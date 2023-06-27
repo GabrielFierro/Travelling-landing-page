@@ -14,7 +14,7 @@ export default function About() {
         <Flex px={{ base: 6, xl: 1 }} direction={{ base: 'column', md: 'row' }}>
           <Card
             h='auto'
-            w='auto'
+            w='600px'
             mb={{ base: 0, md: 6 }}
             mx={{ base: 0, md: 5 }}
           >
@@ -30,15 +30,14 @@ export default function About() {
           <Flex
             direction='column'
             h='427px'
-            w={{ base: '100%', md: '550px' }}
-            justify='center'
-            px={0}
+            w={{ base: '100%', md: '700px' }}
+            px={16}
+            mt={12}
           >
             <Text
               textStyle='h2'
               fontSize={{ base: '24px', md: '34px' }}
               color='brand.black'
-              justify='space-between'
               align='center'
               w='100%'
               px={8}
@@ -49,10 +48,10 @@ export default function About() {
             <Flex
               justify='space-around'
               align='center'
-              mt='12'
+              mt={16}
               w='auto'
               h='auto'
-              px={4}
+              px={1}
             >
               <Text textStyle='h3' color='brand.accent'>
                 12K
@@ -64,14 +63,20 @@ export default function About() {
                 10+
               </Text>
             </Flex>
-            <Flex justify='space-between' mt='3' w='100%' h='auto'>
-              <Text textStyle='navbar' color='brand.black'>
+            <Flex
+              justify='space-around'
+              mt='3'
+              w='100%'
+              h='auto'
+              textAlign='center'
+            >
+              <Text textStyle='navbar' color='brand.black' w='100px'>
                 Success Journey
               </Text>
-              <Text textStyle='navbar' color='brand.black'>
+              <Text textStyle='navbar' color='brand.black' w='100px'>
                 Awards Winning
               </Text>
-              <Text textStyle='navbar' color='brand.black'>
+              <Text textStyle='navbar' color='brand.black' w='100px'>
                 Years of Experience
               </Text>
             </Flex>
