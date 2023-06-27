@@ -5,9 +5,9 @@ export default function Description() {
   return (
     <Flex
       direction='column'
-      h='427px'
+      h={{ base: '300px', md: '427px' }}
       w={{ base: '100%', md: '700px' }}
-      px={16}
+      px={{ base: 1, md: 16 }}
       mt={12}
     >
       <Text
