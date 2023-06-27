@@ -21,11 +21,17 @@ export default function Category() {
   return (
     <Box maxW='100%' h='auto'>
       <Flex direction='column'>
-        <Flex h='400px' direction='column' align='center' justify='center'>
+        <Flex
+          h='400px'
+          direction='column'
+          align='center'
+          justify='center'
+          mt={{ base: 12, md: 1 }}
+        >
           <Text textStyle='h3' color='brand.accent' my={3}>
             EXPLORE YOUR DREAM PLACE
           </Text>
-          <Heading color='brand.black' mb={6}>
+          <Heading color='brand.black' mb={6} ml={2}>
             Find Your Dream Destination
           </Heading>
           <Flex
