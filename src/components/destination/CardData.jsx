@@ -23,7 +23,7 @@ export default function CardData({ allCards }) {
             px='4'
             pos='absolute'
             top='35px'
-            right='75px'
+            right={{ base: '90px', md: '75px' }}
             zIndex={1}
             _hover={{
               cursor: 'pointer'
@@ -51,7 +51,13 @@ export default function CardData({ allCards }) {
               cursor: 'pointer'
             }}
           />
-          <Flex maxW='300px' px='4' pos='absolute' bottom='30px' left='30px'>
+          <Flex
+            maxW='300px'
+            px='4'
+            pos='absolute'
+            bottom='30px'
+            left={{ base: '15px', md: '30px' }}
+          >
             <Image src={LocationIcon} alt='Location icon' />
             <Heading size='md' color='brand.white' px='1'>
               {card.title}
