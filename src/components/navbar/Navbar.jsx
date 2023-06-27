@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  Flex,
-  Image,
-  Link,
-  Stack
-} from '@chakra-ui/react';
+import { Box, Button, Flex, Image, Link, Stack } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import logo from '../../assets/images/logo.svg';
 import BurguerButton from './BurguerButton';
