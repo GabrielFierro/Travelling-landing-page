@@ -13,7 +13,7 @@ export default function About() {
       </Flex>
       <Box width='100%' h={{ base: '300px', xs: '430px' }}>
         <Flex px={{ base: 6, xl: 1 }} direction={{ base: 'column', md: 'row' }}>
-          <Card h='427px' w='600px' m={{ base: 0, md: 6 }}>
+          <Card h='427px' maxW='600px' m={{ base: 0, md: 6 }}>
             <Image
               h='full'
               w='100%'
