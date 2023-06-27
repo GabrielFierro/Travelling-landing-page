@@ -15,7 +15,6 @@ export default function Header() {
         top='100'
         left={{ base: 70, md: 100 }}
         maxW={{ base: '300px', md: '500px' }}
-        bg='tomato'
       >
         <Text color='brand.white' textStyle='h1'>
           TRAVEL AROUND THE WORLD
