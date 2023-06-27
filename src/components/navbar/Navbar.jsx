@@ -23,10 +23,10 @@ export default function Navbar() {
             maxW='200px'
             pt='6'
             pl='4'
-            h={{ base: '100px', md: '100%' }}
+            h={{ base: '80px', md: '100%' }}
             pos={{ base: 'absolute', md: 'relative' }}
             top='10%'
-            left={{ base: '30%', md: '0px' }}
+            left={{ base: '35%', md: '0px' }}
           >
             <Image maxW='200px' src={logo} alt='Logo' cursor='pointer' />
           </Box>
