@@ -34,7 +34,7 @@ export default function ButtonHandle({ categories, handleClick }) {
 
   return (
     <Flex
-      w='600px'
+      w={{ base: '200px', md: '600px' }}
       h={{ base: '100%', md: '100px' }}
       align='center'
       justify='space-around'
