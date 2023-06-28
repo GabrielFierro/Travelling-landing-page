@@ -5,7 +5,7 @@ import Mountains from '../../assets/images/mountains.webp';
 
 export default function About() {
   return (
-    <Box maxW='100%' h='auto'>
+    <Box maxW='100%' h='auto' id='about'>
       <Flex align='center' justify='center'>
         <Heading color='brand.black' as='h2' size='2xl' my='9'>
           ABOUT <span>US</span>

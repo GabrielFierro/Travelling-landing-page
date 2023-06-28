@@ -4,6 +4,7 @@ import { Box, Button, Flex, Text } from '@chakra-ui/react';
 export default function Message() {
   return (
     <Box
+      id='blog'
       maxW='100%'
       align='center'
       h='auto'

@@ -31,7 +31,7 @@ export default function Category() {
           <Text textStyle='h3' color='brand.accent' my={3}>
             EXPLORE YOUR DREAM PLACE
           </Text>
-          <Heading color='brand.black' mb={6} ml={2}>
+          <Heading color='brand.black' mb={6} ml={2} id='destination'>
             Find Your Dream Destination
           </Heading>
           <Flex
