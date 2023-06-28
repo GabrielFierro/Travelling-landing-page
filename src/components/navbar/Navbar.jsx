@@ -1,5 +1,6 @@
-import { Box, Button, Flex, Image, Link, Stack } from '@chakra-ui/react';
+import { Box, Button, Flex, Image, Stack } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import logo from '../../assets/images/logo.svg';
 import BurguerButton from './BurguerButton';
 
@@ -10,9 +11,13 @@ export default function Navbar() {
     setClicked(!clicked);
   };
 
+  const closeMenu = () => {
+    setClicked(false);
+  };
+
   return (
     <Flex bg='rgba(0,0,0,0.7)' pos='fixed' zIndex={2} w='100%'>
-      <div className={`links ${clicked ? 'active' : ''}`}>
+      <div className={clicked ? 'links active' : 'links'}>
         <Flex
           direction={{ base: 'column', md: 'row' }}
           justify={['space-between', 'center']}
@@ -45,10 +50,46 @@ export default function Navbar() {
               color='brand.white'
               textStyle='navbar'
             >
-              <Link>Home</Link>
-              <Link>Destination</Link>
-              <Link>About</Link>
-              <Link>Blog</Link>
+              <Link
+                style={{ cursor: 'pointer' }}
+                onClick={closeMenu}
+                to='header'
+                smooth={true}
+                offset={-200}
+                duration={1000}
+              >
+                Home
+              </Link>
+              <Link
+                style={{ cursor: 'pointer' }}
+                onClick={closeMenu}
+                to='destination'
+                smooth={true}
+                offset={-200}
+                duration={1000}
+              >
+                Destination
+              </Link>
+              <Link
+                style={{ cursor: 'pointer' }}
+                onClick={closeMenu}
+                to='about'
+                smooth={true}
+                offset={-50}
+                duration={1000}
+              >
+                About
+              </Link>
+              <Link
+                style={{ cursor: 'pointer' }}
+                onClick={closeMenu}
+                to='blog'
+                smooth={true}
+                offset={-70}
+                duration={1000}
+              >
+                Blog
+              </Link>
             </Flex>
           </Flex>
           <Stack
