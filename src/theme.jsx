@@ -11,10 +11,6 @@ const theme = extendTheme({
       footer: '#898E8C'
     }
   },
-  fonts: {
-    heading: `'Montserrat', sans-serif`,
-    text: `'Rubik', sans-serif`
-  },
   fontWeights: {
     regular: 400, // categories, Rubik footer sections categories
     medium: 500, // Rubik navbar, Montserrat subtitles
