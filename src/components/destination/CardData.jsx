@@ -35,6 +35,8 @@ export default function CardData({ allCards }) {
               _hover={{
                 cursor: 'pointer'
               }}
+              w='31px'
+              h='29px'
             />
             <Text color='white' fontSize='2xl' px='2'>
               4.8
@@ -58,7 +60,7 @@ export default function CardData({ allCards }) {
             bottom='30px'
             left={{ base: '15px', md: '30px' }}
           >
-            <Image src={LocationIcon} alt='Location icon' />
+            <Image src={LocationIcon} alt='Location icon' w='20px' h='20px' />
             <Heading size='md' color='brand.white' px='1'>
               {card.title}
             </Heading>
