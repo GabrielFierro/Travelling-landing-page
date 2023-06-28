@@ -33,7 +33,14 @@ export default function Navbar() {
             top={{ base: '10%', md: '0px' }}
             left={{ base: '35%', md: '0px' }}
           >
-            <Image maxW='200px' src={logo} alt='Logo' cursor='pointer' />
+            <Image
+              maxW='200px'
+              w='124px'
+              h='31px'
+              src={logo}
+              alt='Logo'
+              cursor='pointer'
+            />
           </Box>
           <Flex
             w='100%'
