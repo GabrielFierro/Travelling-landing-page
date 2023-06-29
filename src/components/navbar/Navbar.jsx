@@ -6,14 +6,65 @@ import BurguerButton from './BurguerButton';
 
 export default function Navbar() {
   const [clicked, setClicked] = useState(false);
+  const [linkActive, setLinkActive] = useState(0);
+  const [borderColor, setBorderColor] = useState('#19A7CE');
 
   const handleClick = () => {
     setClicked(!clicked);
   };
 
-  const closeMenu = () => {
+  const closeMenu = (index) => {
     setClicked(false);
+    setLinkActive(index);
+    setBorderColor('#19A7CE');
   };
+
+  const link = [
+    {
+      id: 0,
+      name: 'Home',
+      to: 'header'
+    },
+    {
+      id: 1,
+      name: 'Destination',
+      to: 'destination'
+    },
+    {
+      id: 2,
+      name: 'About',
+      to: 'about'
+    },
+    {
+      id: 3,
+      name: 'Blog',
+      to: 'blog'
+    }
+  ];
+
+  const links = link.map((link) => {
+    return (
+      <Link
+        key={link.id}
+        style={{
+          cursor: 'pointer',
+          borderBottom:
+            linkActive === link.id
+              ? `3px solid ${borderColor}`
+              : '3px solid transparent'
+        }}
+        onClick={() => {
+          closeMenu(link.id);
+        }}
+        to={link.to}
+        smooth={true}
+        offset={-100}
+        duration={1000}
+      >
+        {link.name}
+      </Link>
+    );
+  });
 
   return (
     <Flex bg='rgba(0,0,0,0.7)' pos='fixed' zIndex={2} w='100%'>
@@ -57,46 +108,7 @@ export default function Navbar() {
               color='brand.white'
               textStyle='navbar'
             >
-              <Link
-                style={{ cursor: 'pointer' }}
-                onClick={closeMenu}
-                to='header'
-                smooth={true}
-                offset={-200}
-                duration={1000}
-              >
-                Home
-              </Link>
-              <Link
-                style={{ cursor: 'pointer' }}
-                onClick={closeMenu}
-                to='destination'
-                smooth={true}
-                offset={-200}
-                duration={1000}
-              >
-                Destination
-              </Link>
-              <Link
-                style={{ cursor: 'pointer' }}
-                onClick={closeMenu}
-                to='about'
-                smooth={true}
-                offset={-50}
-                duration={1000}
-              >
-                About
-              </Link>
-              <Link
-                style={{ cursor: 'pointer' }}
-                onClick={closeMenu}
-                to='blog'
-                smooth={true}
-                offset={-70}
-                duration={1000}
-              >
-                Blog
-              </Link>
+              {links}
             </Flex>
           </Flex>
           <Stack
