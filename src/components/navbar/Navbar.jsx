@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Image, Stack } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import logo from '../../assets/images/logo.svg';
+import logo from '../../assets/images/navbar-logo.svg';
 import BurguerButton from './BurguerButton';
 
 export default function Navbar() {

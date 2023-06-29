@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Flex, Image, SimpleGrid, Text } from '@chakra-ui/react';
 import Message from './Message';
-import logo from '../../assets/images/logo.svg';
+import logo from '../../assets/images/footer-logo.svg';
 
 export default function Footer() {
   return (
