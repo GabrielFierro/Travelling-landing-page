@@ -11,10 +11,9 @@ export default function Header() {
       <Box
         pos='absolute'
         top='100'
-        left={{ base: 70, md: 100 }}
-        maxW={{ base: '300px', md: '500px' }}
-      >
-        <Text color='brand.white' textStyle='h1' id='header'>
+        left={{ base: 70, md: 400 }}
+        maxW={{ base: '300px', md: '500px' }}>
+        <Text color='brand.black' textStyle='h1' textAlign='center' id='header'>
           TRAVEL AROUND THE WORLD
         </Text>
       </Box>
