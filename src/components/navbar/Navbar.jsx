@@ -59,8 +59,7 @@ export default function Navbar() {
         to={link.to}
         smooth={true}
         offset={-100}
-        duration={1000}
-      >
+        duration={1000}>
         {link.name}
       </Link>
     );
@@ -73,8 +72,7 @@ export default function Navbar() {
           direction={{ base: 'column', md: 'row' }}
           justify={['space-between', 'center']}
           w='100%'
-          h='100%'
-        >
+          h='100%'>
           <Box
             maxW='200px'
             pt='6'
@@ -82,8 +80,7 @@ export default function Navbar() {
             h={{ base: '80px', md: '100%' }}
             pos={{ base: 'absolute', md: 'relative' }}
             top={{ base: '10%', md: '0px' }}
-            left={{ base: '35%', md: '0px' }}
-          >
+            left={{ base: '35%', md: '0px' }}>
             <Image
               maxW='200px'
               w='124px'
@@ -97,8 +94,7 @@ export default function Navbar() {
             w='100%'
             h='100%'
             justify='center'
-            align={{ base: 'center', md: 'flex-start' }}
-          >
+            align={{ base: 'center', md: 'flex-start' }}>
             <Flex
               h={{ base: '250px', md: '80px' }}
               w='400px'
@@ -106,8 +102,7 @@ export default function Navbar() {
               justify={{ base: 'space-evenly', md: 'space-between' }}
               align='center'
               color='brand.white'
-              textStyle='navbar'
-            >
+              textStyle='navbar'>
               {links}
             </Flex>
           </Flex>
@@ -118,21 +113,19 @@ export default function Navbar() {
             direction='row'
             mt={4}
             mx='4'
-            justify='center'
-          >
+            justify='center'>
             <Button
               w='100px'
               h='45px'
-              background='RGBA(0, 0, 0, 0.1)'
+              background='RGBA(0, 0, 0, 0.6)'
               color='brand.white'
               borderRadius='md'
               variant='solid'
               px='4'
               _hover={{
-                background: 'brand.white',
+                background: 'brand.accent',
                 color: 'brand.black'
-              }}
-            >
+              }}>
               Login
             </Button>
             <Button
@@ -142,8 +135,7 @@ export default function Navbar() {
               colorScheme='gray'
               borderRadius='md'
               variant='solid'
-              px='6'
-            >
+              px='6'>
               Register
             </Button>
           </Stack>
