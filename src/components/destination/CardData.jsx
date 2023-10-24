@@ -17,29 +17,26 @@ export default function CardData({ allCards }) {
       <Card key={card.id} maxW='lg' variant='filled' bg='brand.white'>
         <CardBody>
           <Flex
-            bg='blackAlpha.500'
+            bg='blackAlpha.700'
             rounded='full'
             maxW='170px'
             px='4'
             pos='absolute'
             top='35px'
             right={{ base: '90px', md: '75px' }}
-            zIndex={1}
-            _hover={{
-              cursor: 'pointer'
-            }}
-          >
+            zIndex={1}>
             <Image
               src={StarIcon}
               alt='Logo'
               _hover={{
                 cursor: 'pointer'
               }}
+              pt='5px'
               w='31px'
               h='29px'
             />
             <Text color='white' fontSize='2xl' px='2'>
-              4.8
+              {card.rating}
             </Text>
           </Flex>
           <Image
@@ -58,8 +55,7 @@ export default function CardData({ allCards }) {
             px='4'
             pos='absolute'
             bottom='30px'
-            left={{ base: '15px', md: '30px' }}
-          >
+            left={{ base: '15px', md: '30px' }}>
             <Image src={LocationIcon} alt='Location icon' w='20px' h='20px' />
             <Heading size='md' color='brand.white' px='1'>
               {card.title}
